@@ -1,23 +1,12 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import {StatusBar,SafeAreaView} from 'react-native';  //Bibliotecas do React native 
 import Cesta from './src/Telas/Cesta';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text> Alura </Text>
+    <SafeAreaView >
       <Cesta/>
-      <StatusBar style="auto" />
-    </View>
+      <StatusBar/>
+    </SafeAreaView>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
