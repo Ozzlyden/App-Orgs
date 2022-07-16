@@ -1,4 +1,4 @@
-# Apo orgs
+# App orgs
 Projeto em React Native, voltado para divulgação de produtos
 
 >Status do Projeto: Em desenvolvimento
