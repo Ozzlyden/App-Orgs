@@ -13,7 +13,6 @@ export default function Cesta(){
      <Text style={estilos.titulo}>  Detalhe da cesta</Text>
 
     <View style={estilos.cesta}>
-        <Text style={estilos.nome}> Cesta de verduras</Text>
         <View style={estilos.fazenda}>
             <Image source={logo} style={estilos.imagemFazenda}/>
             <Text style={estilos.nome}> Cesta de verduras</Text> 
@@ -31,6 +30,7 @@ const estilos = StyleSheet.create({
     topo:{
         width: "100%",
         height: 578 / 768 *width,     //para fazer a altura responsiva com a tela do cel
+        fontFamily: "Montserrat",
     },
     titulo: {
         width: "100%",              //largura
@@ -51,7 +51,7 @@ const estilos = StyleSheet.create({
         color: "#464646",
         fontSize: 26,
         lineHeight: 42,
-        fontWeight: "bold",
+        fontFamily: "MonserratBold",    //Colocando a font
     },
     imagemFazenda:{
         width: 32,
@@ -65,6 +65,7 @@ const estilos = StyleSheet.create({
         fontSize: 16,
         lineHeight: 26,
         marginLeft: 12,
+        fontFamily: "MonserratRegular",
     },
     descricao:{
         color: "A3A3A3",
