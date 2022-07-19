@@ -1,6 +1,7 @@
 import React from "react";
 import {Image, StyleSheet, Dimensions, Text, View}  from "react-native";
 
+import Texto from '../../src/componentes/Texto.js';
 import topo from"../../assets/topo.png";
 import logo from "../../assets/logo.png";
 
@@ -10,18 +11,18 @@ export default function Cesta(){
     //<> Fraquimento q serve para agrupa elementos, como return so para retorna um elemento
     return <>   
      <Image source={topo} style ={estilos.topo}/>
-     <Text style={estilos.titulo}>  Detalhe da cesta</Text>
+     <Texto style={estilos.titulo}>  Detalhe da cesta</Texto>
 
     <View style={estilos.cesta}>
         <View style={estilos.fazenda}>
             <Image source={logo} style={estilos.imagemFazenda}/>
-            <Text style={estilos.nome}> Cesta de verduras</Text> 
+            <Texto style={estilos.nome}> Cesta de verduras</Texto> 
         </View>
-        <Text style={estilos.nomeFazenda}> Jenny Jack Farm</Text>
-        <Text style={estilos.descricao}>Uma cesto com produtos selecionados
+        <Texto style={estilos.nomeFazenda}> Jenny Jack Farm</Texto>
+        <Texto style={estilos.descricao}>Uma cesto com produtos selecionados
             cuidadosamente da fazenda para
-             sua cozinha</Text>
-        <Text style={estilos.preco}> R$ 40,00</Text>
+             sua cozinha</Texto>
+        <Texto style={estilos.preco}> R$ 40,00</Texto>
     </View>
      </>
 }
@@ -51,7 +52,7 @@ const estilos = StyleSheet.create({
         color: "#464646",
         fontSize: 26,
         lineHeight: 42,
-        fontFamily: "MonserratBold",    //Colocando a font
+        fontWeight: "Bold",
     },
     imagemFazenda:{
         width: 32,
@@ -65,7 +66,7 @@ const estilos = StyleSheet.create({
         fontSize: 16,
         lineHeight: 26,
         marginLeft: 12,
-        fontFamily: "MonserratRegular",
+        
     },
     descricao:{
         color: "A3A3A3",
