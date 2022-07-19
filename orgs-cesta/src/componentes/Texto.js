@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, StyleSheet } from 'react-native';
 
-export default function Texto({children, style }){            //children retorna uma coleção de elementos filho de um elemento, e o style ta pegando estilo base desse filhos
+export default function Texto ({children, style }){            //children retorna uma coleção de elementos filho de um elemento, e o style ta pegando estilo base desse filhos
     let estilo = estilos.texto;
 
     if(style?.fontWeight === "Bold"){            //Quando nao tiver esse style no item, chama a const e aplica texto.Negrito

@@ -1,12 +1,16 @@
 import React from 'react';
 import {StatusBar,SafeAreaView, View} from 'react-native';  //Bibliotecas do React native 
-import Cesta from './src/Telas/Cesta';
+
 import { 
   useFonts, 
   Montserrat_400Regular, 
   Montserrat_700Bold, 
   Montserrat_400Regular_Italic} 
   from '@expo-google-fonts/montserrat';   //import das fonts do Google
+
+import Cesta from './src/Telas/Cesta';
+import mock from './src/mocks/cesta';
+
 
 export default function App() {
   const[fontsCarregadas] = useFonts({                      //const usado para chamar o uso dessas fonts
@@ -21,7 +25,7 @@ export default function App() {
 
   return (
     <SafeAreaView >
-      <Cesta/>
+      <Cesta {...mock}/>    
       <StatusBar/>
     </SafeAreaView>
   );

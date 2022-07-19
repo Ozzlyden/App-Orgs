@@ -5,13 +5,14 @@ import {StyleSheet, View}  from "react-native";
 import Topo from "./componentes/Topo.js";
 import Detalhes from "./componentes/Detalhes.js";
 
-export default function Cesta(){
+export default function Cesta(topo, detalhes ){
     //<> Fraquimento q serve para agrupa elementos, como return so para retorna um elemento
+    // ...  significa a desconstrucao do obj detalhes, trazendo a info desse obj
     return <>  
-     <Topo/>
+     <Topo {...topo}/>
 
     <View style={estilos.cesta}>
-       <Detalhes/>
+       <Detalhes {... detalhes}/>   
     </View>
      </>
 }
