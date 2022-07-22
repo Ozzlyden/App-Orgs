@@ -1,15 +1,13 @@
 import React from "react";
 import { View, Image, Texto, StyleSheet } from "react-native"; 
 
-import logo from "../../../../assets/logo.png";
-
 
 export default function Detalhes({nome, nomeFazenda, logoFazenda, descricao, preco}){   //dentro das {} sao var que estao no obj "detalhes"
     return <>
         <Texto style={estilos.nome}> { nome }</Texto> 
 
         <View style={estilos.fazenda}>
-            <Image source={logo} style={estilos.imagemFazenda}/>
+            <Image source={logoFazenda} style={estilos.imagemFazenda}/>
             <Texto style={estilos.nomeFazenda}> { nomeFazenda }</Texto>
         </View>
 
