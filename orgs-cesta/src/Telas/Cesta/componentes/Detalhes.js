@@ -1,7 +1,6 @@
 import React from 'react';
 import { View, Image, Texto, StyleSheet, TouchableOpacity} from 'react-native'; 
 
-import Texto from '../../../componentes/Texto';
 
 
 export default function Detalhes ({nome, nomeFazenda, logoFazenda, descricao, preco, botao}){   //dentro das sao var que estao no obj "detalhes"
