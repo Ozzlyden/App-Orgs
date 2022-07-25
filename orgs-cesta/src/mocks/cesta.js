@@ -27,19 +27,19 @@ const cesta = {
             {
                 nome: "Tomate",
                 imagem: tomate,
-            }
+            },
             {
                 nome: "Brocolis",
                 imagem: brocolis,
-            }
+            },
             {
                 nome: "Batata",
                 imagem: batata,
-            }
+            },
             {
                 nome: "Pepino",
                 imagem: pepino,
-            }
+            },
             {
                 nome: "Abóbora",
                 imagem: abobora ,
